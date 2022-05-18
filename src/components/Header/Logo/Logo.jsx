@@ -1,9 +1,19 @@
-import "./Logo.css";
+// import "./Logo.css";
+import styled from 'styled-components';
+
+const LogoStyle = styled.div`
+    font-size: 1.5rem;
+    font-weight: 500;
+`
+const Highlight = styled.span`
+    color: #377e9a;
+`
+
 const Logo = ()=>(
-    <div className="logo">
-        <span className="logo__highlight">Tifa</span>
+    <LogoStyle>
+        <Highlight>Tifa</Highlight>
         Lockhart
-    </div>
+    </LogoStyle>
 )
 
 export default Logo;

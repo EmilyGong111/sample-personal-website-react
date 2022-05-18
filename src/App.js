@@ -1,12 +1,20 @@
-import './App.css';
+import styled from 'styled-components';
 import Header from './components/Header';
+import ServicePage from './components/ServicePage';
 
+const Container = styled.div`
+  max-width: 1000px;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+`
 
 const App = ()=>(
-  <div className="container"> 
+  <Container> 
     <Header />
-    <p>how are you</p>
-    </div>
+    <ServicePage>hello</ServicePage>
+    </Container>
 )
 
 export default App;

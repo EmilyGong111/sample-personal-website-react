@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Header from './components/Header';
-import ServicePage from './components/ServicePage';
+import Page from './components/Page';
 
 const Container = styled.div`
   max-width: 1000px;
@@ -9,11 +9,11 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
 `
-
+const ACTIVE_PAGE = "BLOG_PAGE";
 const App = ()=>(
   <Container> 
-    <Header />
-    <ServicePage>hello</ServicePage>
+    <Header activePage={ACTIVE_PAGE}/>
+    <Page activePage={ACTIVE_PAGE}/>
     </Container>
 )
 

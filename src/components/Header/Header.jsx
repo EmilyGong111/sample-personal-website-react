@@ -12,10 +12,11 @@ const Nav = styled.div`
     justify-content: space-between;
 `
 
-const Header = () => (
+
+const Header = ({activePage}) => (
     <Nav>
         <Logo />
-        <Navigation />
+        <Navigation activePage={activePage}/>
     </Nav>
         
 )

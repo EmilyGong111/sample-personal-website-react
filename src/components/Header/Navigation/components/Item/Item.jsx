@@ -35,11 +35,10 @@ const Wrapper = styled.a`
 `;
 
 const Item = ({
-    href,
     active=false,
     children,
 })=>{
     return (
-    <Wrapper active={active} href={href}>{children}</Wrapper>
+    <Wrapper active={active}>{children}</Wrapper>
 )}
 export default Item;
